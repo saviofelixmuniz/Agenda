@@ -187,6 +187,9 @@ angular.module('agendaApp')
              console.log($rootScope.lists);
              $scope.processPages();
              $scope.indexes = $scope.getIndex();
+        }, function (badResponse) {
+            console.log(badResponse);
+            $rootScope.lists = [];
         });
     }
 
