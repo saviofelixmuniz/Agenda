@@ -1,5 +1,5 @@
 angular.module('agendaApp')
-.controller("modalController", function($scope, $uibModal, sharedModalProperties, $document) {
+.controller("modalController", function($scope, $rootScope, $uibModal, sharedModalProperties, $document) {
 	$scope.currentTask = sharedModalProperties.getCurrentTask();
 	$scope.modal = sharedModalProperties.getActiveModal();
 	$scope.changeList = {
